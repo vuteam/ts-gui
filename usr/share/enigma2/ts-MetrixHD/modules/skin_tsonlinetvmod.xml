@@ -1,0 +1,141 @@
+<skin>
+  <!-- *** EXTERNAL PLUGINS *** -->
+  <!-- TSonlineTvmod -->
+  <screen name="TSMyIptvPlaylist" position="1,center" size="1280,720" title="IPTV Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
+   <eLabel position="51,51" zPosition="-10" size="430,619" backgroundColor="metrixBackground" transparent="0" />
+   <eLabel position="496,51" zPosition="-10" size="720,619" backgroundColor="metrixBackground" transparent="0" />
+   <widget source="Title" render="Label" position="515,55" size="700,45" font="SetrixHD; 29" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+   <widget name="feedlist" position="513,126" size="697,480" scrollbarMode="showOnDemand" backgroundColorSelected="metrixSelection" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1"/>
+   <widget name="grouplist" position="63,60" size="410,600" scrollbarMode="showNever" backgroundColorSelected="metrixSelection" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+   <widget name="infoload" position="423,106" zPosition="4" size="787,510" font="Regular;23" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" halign="center" valign="center" />
+   <widget name="info" position="63,570" zPosition="4" size="410,90" font="Regular;21" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" halign="center" valign="center" />
+   <eLabel position="499,630" zPosition="-1" size="6,40" backgroundColor="metrixRed" transparent="0" />
+   <eLabel position="671,630" zPosition="-1" size="6,40" backgroundColor="metrixGreen" transparent="0" />
+   <eLabel position="835,630" zPosition="-1" size="6,40" backgroundColor="metrixYellow" transparent="0" />
+   <eLabel position="995,630" zPosition="-1" size="6,40" backgroundColor="metrixBlue" transparent="0" />
+   <eLabel name="key_red" text="Exit" position="513,635" size="140,30" zPosition="1" font="SetrixHD; 22" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+   <eLabel name="key_green" text="About" position="687,635" size="130,30" zPosition="1" font="SetrixHD; 22" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+   <widget source="key_yellow" render="Label" position="850,635" size="130,30" zPosition="1" font="SetrixHD; 22" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+   <widget source="key_blue" render="Label" position="1011,635" size="130,30" zPosition="1" font="SetrixHD; 22" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+   <ePixmap name="key_menu" position="1125,630" size="81,40" pixmap="ts-MetrixHD/buttons/key_menu.png" />
+   <widget source="global.CurrentTime" render="Label" position="1103,48" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground" transparent="1">
+   <convert type="ClockToText">Default</convert>
+   </widget>
+   <widget source="global.CurrentTime" render="Label" position="931,57" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground" transparent="1" foregroundColor="metrixAccent1">
+   <convert type="ClockToText">Format: %A</convert>
+   </widget>
+   <widget source="global.CurrentTime" render="Label" position="931,84" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
+   <convert type="ClockToText">Format: %e. %B</convert>
+   </widget>
+   </screen>
+  <screen name="TSIPTVPlayer" position="0,0" size="1283,723" title="TS IPTV Player" flags="wfNoBorder" backgroundColor="transparent">
+      <eLabel position="0,570" zPosition="-2" size="1281,150" backgroundColor="metrixBackground" transparent="0" />
+      <widget name="channel_number" position="30,418" size="1250,256" font="SetrixHD; 140" valign="top" noWrap="1" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" zPosition="-99"/>
+      <widget name="programm" position="179,611" size="892,50" font="SetrixHD; 40" valign="top" noWrap="1" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1"/>
+      <widget name="group" position="60,575" size="892,25" font="SetrixHD; 18" valign="top" noWrap="1" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1"/>
+      <widget name="picon" position="60,610" size="100,60" backgroundColor="#41000000" alphatest="blend"/>
+      <ePixmap pixmap="ts-MetrixHD/icons/ico_dolby_off.png" position="1051,616" size="64,23" zPosition="1" alphatest="blend" />
+      <widget source="session.CurrentService" render="Pixmap" pixmap="ts-MetrixHD/icons/ico_dolby_on.png" position="1051,616" size="64,23" zPosition="2" alphatest="blend">
+          <convert type="ServiceInfo">IsMultichannel</convert>
+          <convert type="ConditionalShowHide" />
+      </widget>
+      <ePixmap pixmap="ts-MetrixHD/icons/ico_format_off.png" position="1127,615" size="41,26" zPosition="1" alphatest="blend" />
+      <widget source="session.CurrentService" render="Pixmap" pixmap="ts-MetrixHD/icons/ico_format_on.png" position="1127,615" size="41,26" zPosition="2" alphatest="blend">
+          <convert type="ServiceInfo">IsWidescreen</convert>
+          <convert type="ConditionalShowHide" />
+      </widget>
+      <ePixmap pixmap="ts-MetrixHD/icons/ico_hd_off.png" position="1188,617" size="49,24" zPosition="1" alphatest="blend" />
+      <widget source="session.CurrentService" render="Pixmap" pixmap="ts-MetrixHD/icons/ico_hd_on.png" position="1188,617" size="49,24" zPosition="2" alphatest="blend">
+          <convert type="ServiceInfo">VideoWidth</convert>
+          <convert type="ValueRange">721,1980</convert>
+          <convert type="ConditionalShowHide" />
+      </widget>
+      <widget source="session.CurrentService" render="Label" font="Regular; 18" position="1070,576" size="55,25" halign="right" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1">
+          <convert type="ServiceInfo">VideoWidth</convert>
+      </widget>
+      <eLabel text="x" font="Regular; 18" position="1129,576" size="15,25" halign="center" foregroundColor="metrixAccent2" backgroundColor="metrixBackground" transparent="1" />
+      <widget source="session.CurrentService" render="Label" font="Regular; 18" position="1146,576" size="55,25" halign="left" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1">
+          <convert type="ServiceInfo">VideoHeight</convert>
+      </widget>
+      <widget source="session.RecordState" render="Pixmap" pixmap="ts-MetrixHD/icons/ico_rec_on.png" position="57,40" size="74,23" zPosition="2" alphatest="blend">
+          <convert type="ConditionalShowHide">Blink</convert>
+      </widget>
+      <widget source="session.CurrentService" render="Label" position="130,657" size="100,28" font="SetrixHD;24" halign="right" valign="center" backgroundColor="metrixBackground" shadowColor="metrixBackground" shadowOffset="-1,-1" transparent="1">
+          <convert type="ServicePosition">Position</convert>
+      </widget>
+      <widget source="session.CurrentService" render="PositionGauge" progress_pointer="ts-MetrixHD/SkinDesign/pointer.png:12,2" position="241,664" size="880,14" transparent="1">
+          <convert type="ServicePosition">Gauge</convert>
+      </widget>
+      <widget source="session.CurrentService" render="Progress" position="241,669" size="880,3" backgroundColor="metrixForeground" borderWidth="0" transparent="1">
+          <convert type="ServicePosition">Position</convert>
+      </widget>
+      <widget source="session.CurrentService" render="Label" position="1138,657" size="100,28" font="SetrixHD;24" halign="left" valign="center" backgroundColor="metrixBackground" transparent="1">
+          <convert type="ServicePosition">Remaining</convert>
+      </widget>
+      <!--widget source="session.CurrentService" render="Label" position="3,581" size="137,56" font="SetrixHD; 40" halign="right" valign="top" backgroundColor="metrixBackground" transparent="1" foregroundColor="metrixAccent2">
+          <convert type="ServicePosition">Length</convert>
+      </widget> -->
+      <!-- /*ClockWidget-->
+      <widget source="global.CurrentTime" render="Label" position="1081,31" size="169,80" font="SetrixHD; 60" halign="left" backgroundColor="metrixBackground" transparent="1" valign="top">
+          <convert type="ClockToText">Default</convert>
+      </widget>
+      <widget source="global.CurrentTime" render="Label" position="921,73" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
+          <convert type="ClockToText">Format: %e. %B</convert>
+      </widget>
+      <widget source="global.CurrentTime" render="Label" position="943,45" size="125,30" font="Regular; 18" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
+          <convert type="ClockToText">Format: %A</convert>
+      </widget>
+      <eLabel name="new eLabel" position="239,670" size="880,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" zPosition="-1" />
+      <eLabel position="913,40" zPosition="-1" size="320,70" backgroundColor="metrixBackground" transparent="0" />
+      <!--ClockWidget */-->
+  </screen>
+  <!-- Teledunet Setup -->
+  <screen name="teleSetupScreen" position="0,0" size="1280,720" title="TeledunetUpdater Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel position="40,25" zPosition="-10" size="1205,650" backgroundColor="metrixBackground" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground" transparent="1" foregroundColor="metrixAccent1">
+      <convert type="ClockToText">Format: %A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format: %e. %B</convert>
+    </widget>
+    <widget source="Title" render="Label" position="70,47" size="800,50" font="SetrixHD;35" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="config" position="70,120" size="700,450" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="info" position="70,480" size="700,50" font="SetrixHD;24" foregroundColor="metrixForeground" backgroundColor="metrixBackground" halign="center" transparent="1" />
+    <eLabel position="94,635" zPosition="-1" size="6,40" backgroundColor="metrixRed" transparent="0" />
+    <eLabel position="384,635" zPosition="-1" size="6,40" backgroundColor="metrixGreen" transparent="0" />
+    <eLabel position="674,635" zPosition="-1" size="6,40" backgroundColor="metrixYellow" transparent="0" />
+    <eLabel position="964,635" zPosition="-1" size="6,40" backgroundColor="metrixBlue" transparent="0" />
+    <eLabel name="red" text="Back" position="105,637" size="240,30" zPosition="1" font="SetrixHD;20" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <eLabel name="green" text="Save" position="395,637" size="240,30" zPosition="1" font="SetrixHD;20" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="key_yellow" render="Label" position="685,637" size="240,30" zPosition="1" font="SetrixHD;20" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="key_blue" render="Label" position="975,637" size="260,30" zPosition="1" font="SetrixHD;20" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="ts-MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
+  </screen>
+  <!-- UpdateXML -->
+  <screen name="UpdateXMLscreen" position="0,0" size="1280,720" title="Update XML" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel position="40,25" zPosition="-10" size="1205,650" backgroundColor="metrixBackground" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground" transparent="1" foregroundColor="metrixAccent1">
+      <convert type="ClockToText">Format: %A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format: %e. %B</convert>
+    </widget>
+    <widget source="Title" render="Label" position="70,47" size="800,50" font="SetrixHD;35" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="info" position="70,120" size="700,450" font="SetrixHD;24" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <eLabel position="94,635" zPosition="-1" size="6,40" backgroundColor="metrixRed" transparent="0" />
+    <eLabel position="384,635" zPosition="-1" size="6,40" backgroundColor="metrixGreen" transparent="0" />
+    <eLabel position="674,635" zPosition="-1" size="6,40" backgroundColor="metrixYellow" transparent="0" />
+    <eLabel position="964,635" zPosition="-1" size="6,40" backgroundColor="metrixBlue" transparent="0" />
+    <eLabel name="key_red" text="Back" position="105,637" size="240,30" zPosition="1" font="SetrixHD;20" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_green" position="395,637" size="240,30" zPosition="1" font="SetrixHD;20" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_yellow" position="685,637" size="240,30" zPosition="1" font="SetrixHD;20" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_blue" position="975,637" size="260,30" zPosition="1" font="SetrixHD;20" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
+    <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="ts-MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
+  </screen>
+</skin>

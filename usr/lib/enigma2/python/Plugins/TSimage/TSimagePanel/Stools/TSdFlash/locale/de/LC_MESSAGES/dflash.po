@@ -1,0 +1,459 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: dFlash\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: gutemine <gutemine@unknown.com>\n"
+"Language-Team:  <minta@user>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+
+msgid "no"
+msgstr "Nein"
+
+msgid "yes"
+msgstr "Ja"
+
+msgid "nfiwrite"
+msgstr "nfiwrite"
+
+msgid "recovery"
+msgstr "recovery"
+
+msgid "rambo"
+msgstr "rambo"
+
+msgid "flodder"
+msgstr "flodder"
+
+msgid "zlib"
+msgstr "zlib"
+
+msgid "none"
+msgstr "keine"
+
+msgid "lzo"
+msgstr "lzo"
+
+msgid "favor_lzo"
+msgstr "favor_lzo"
+
+msgid "mkfs.jffs2"
+msgstr "mkfs.jffs2"
+
+msgid "mkfs.ubifs"
+msgstr "mkfs.ubifs"
+
+msgid "Select nfi image for flashing"
+msgstr "Wählen Sie ein NFI-Image zum Flashen"
+
+msgid "Disclaimer"
+msgstr "Haftungsausschluss"
+
+msgid ""
+"This way of flashing your Dreambox is potentially\n"
+"dangerous and not supported in any way from DMM.\n"
+"\n"
+"You are using it completely at you own risk!\n"
+"If you want to flash your Dreambox safely use the Webinterface or DreamUP!\n"
+"\n"
+"May the Null modem cable be with you!"
+msgstr ""
+"Diese Art Ihre Dreambox zu Flashen ist möglicherweise\n"
+"gefährlich und wird von DMM nicht unterstützt.\n"
+"\n"
+"Sie verwenden dflash auf eigenes Risiko!\n"
+"Wenn Sie Ihre Dreambox auf unterstützte Weise flashen möchten,\n"
+"verwenden Sie das Webinterface oder DreamUP!\n"
+"\n"
+"Möge Ihr Nullmodemkabel mit Ihnen sein!"
+
+msgid "direct Flash Plugin by gutemine Version %s"
+msgstr "direkt Flashen Plugin von gutemine Version %s"
+
+msgid "%i MB Swapspace OK"
+msgstr "%i MB Swapspace OK"
+
+msgid "Flashing"
+msgstr "Flashen"
+
+msgid "Backup"
+msgstr "Sichern"
+
+msgid "Configuring"
+msgstr "Einstellungen"
+
+msgid "Checking"
+msgstr "Überprüfen"
+
+msgid "dFlash is busy ..."
+msgstr "dFlash ist beschäftigt ..."
+
+msgid "Enter Backup Imagename"
+msgstr "Name des Sicherungsimages eingeben"
+
+msgid "Enter Backup Path"
+msgstr "Sicherungspfad eingeben"
+
+msgid "Sorry, currently not supported on this Dreambox type"
+msgstr "Derzeit leider auf dieser Dreambox nicht unterstützt"
+
+msgid "Sorry, no correct nfi file selected"
+msgstr "Keine korrekte NFI-Datei ausgewählt"
+
+msgid "Sorry, no nfi file unzipped"
+msgstr "NFI-Datei wurde nicht entpackt!"
+
+msgid "Sorry, bad blocks in %s Flash, better try DreamUP with recover bad sectors"
+msgstr "Bad Blocks in %s Flash, besser Sie versuchen DreamUP mit recover bad sectors"
+
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+msgid "Nothing mounted at %s"
+msgstr "Nichts gemountet auf %s"
+
+msgid "Sorry, use Barry Allen for Backup"
+msgstr "Benutzen Sie Barry Allen zum Sichern"
+
+msgid "Sorry, use LowFAT for Backup"
+msgstr "Benutzen Sie LowFAT zum Sichern"
+
+msgid "Sorry, use Dumbo for Backup"
+msgstr "Benutzen Sie Dumbo zum Sichern"
+
+msgid "use back button in browser and try again!"
+msgstr "Zurück Knopf im Browser benutzen, und nochmal versuchen!"
+
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid "Are you sure that you want to unzip %s ?"
+msgstr "Sind Sie sicher, dass Sie %s entpacken wollen?"
+
+msgid "Sorry, unzip of %s was canceled!"
+msgstr "Entpacken von %s wurde abgebrochen !"
+
+msgid "choose rambo device"
+msgstr "Wählen Sie das Rambo Speichergerät"
+
+msgid "choose flodder device"
+msgstr "Wählen Sie das Flodder Speichergerät"
+
+msgid "choose recovery device"
+msgstr "Wählen Sie das Recovery Speichergerät"
+
+msgid "choose raw device"
+msgstr "Wählen Sie das Raw Speichergerät"
+
+msgid "Are you sure that you want to flash now %s ?"
+msgstr ""
+"Wollen Sie jetzt wirklich flashen:\n"
+"%s ?"
+
+msgid "Sorry, Flashing of %s was canceled!"
+msgstr ""
+"Das Flashen von %s\n"
+"wurde leider abgebrochen!"
+
+msgid ""
+"Press OK now for flashing\n"
+"\n"
+"%s\n"
+"\n"
+"Box will reboot automatically when finished!"
+msgstr ""
+"Drücken Sie jetzt OK um zu flashen\n"
+"\n"
+"%s\n"
+"\n"
+"Ihre Box wird nach Abschluss des Flashvorgangs automatisch neu gestartet!"
+
+msgid "Sorry, no device choosen"
+msgstr "Kein Speichergerät gewählt"
+
+msgid "Sorry, no device found"
+msgstr "Kein Speichergerät gefunden"
+
+msgid "Are you sure that you want to FORMAT recovery device %s now for %s ?"
+msgstr "Recovery Device %s für %s formatieren?"
+
+msgid "Sorry, %s device not mounted"
+msgstr "%s Speichergerät nicht gemounted"
+
+msgid ""
+"Copied %s.nfi to %s,\n"
+"don't forget kernel commandline and now\n"
+"reboot for activating it ?"
+msgstr ""
+"%s.nfi nach %s kopiert!\n"
+"Kernel Command Line nicht vergessen und jetzt\n"
+"neu starten zum Aktivieren?"
+
+msgid ""
+"Copied %s.nfi to %s,\n"
+"don't forget to remove stick\n"
+"if you enabled kernel commandline!\n"
+"Halt now ?"
+msgstr ""
+"%s.nfi nach %s kopiert! \n"
+"Nicht vergessen, den USB Stick zu entfernen,\n"
+"wenn die Kernel Command Line aktiviert ist!\n"
+"Jetzt herunterfahren?"
+
+msgid ""
+"Copied %s.nfi to %s,\n"
+"reboot for activating it ?"
+msgstr ""
+"%s.nfi nach %s kopiert!\n"
+"neu starten zum Aktivieren?"
+
+msgid ""
+"Flash Backup to %s finished with imagename:\n"
+"\n"
+"%s.nfi\n"
+"\n"
+"BUT it has I/O Errors"
+msgstr ""
+"Flashsicherung nach %s beendet mit Imagenamen:\n"
+"\n"
+"%s.nfi\n"
+"\n"
+"ABER mit ERRORS I/O "
+
+msgid ""
+"Flash Backup to %s finished with imagename:\n"
+"\n"
+"%s.nfi"
+msgstr ""
+"Flashsicherung nach %s beendet mit Imagenamen:\n"
+"\n"
+"%s .nfi"
+
+msgid "nothing entered"
+msgstr "nichts eingegeben"
+
+msgid "already exists,"
+msgstr "existiert bereits,"
+
+msgid "overwrite ?"
+msgstr "ersetzen ?"
+
+msgid ""
+"\n"
+"\n"
+"Using temporary swapspace."
+msgstr ""
+"\n"
+"\n"
+"Verwende temporären Swapspace."
+
+msgid ""
+"\n"
+"\n"
+"Enigma2 will restart due to lack of swapspace,\n"
+"check result with Backup in Plugin afterwards."
+msgstr ""
+"\n"
+"\n"
+"Enigma2 wird wegen fehlendem Swapspace beendet\n"
+"und nach Durchführung der Sicherung neu gestartet.\n"
+"\n"
+"Überprüfen Sie das Ergebnis anschließend im Plugin\n"
+"mit der Funktion Sichern."
+
+msgid ""
+"\n"
+"\n"
+"Without swapspace."
+msgstr ""
+"\n"
+"\n"
+"Ohne Swapspace."
+
+msgid ""
+"\n"
+"\n"
+"Using existing swapspace."
+msgstr ""
+"\n"
+"\n"
+"Verwende vorhandenen Swapspace."
+
+msgid "Press OK for starting backup to"
+msgstr "OK drücken, um die Sicherung zu starten"
+
+msgid "Be patient, this takes 5-10min ... "
+msgstr "Geduld, der Vorgang dauert 5-10 Min ... "
+
+msgid "not confirmed"
+msgstr "nicht bestätigt"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "About"
+msgstr "Über"
+
+msgid "check /dev/mtd0 = entire Flash"
+msgstr "check /dev/mtd0 = gesamter Flash"
+
+msgid "check /dev/mtd/0 = entire Flash"
+msgstr "check /dev/mtd/0 = gesamter Flash"
+
+msgid "check /dev/mtd1 = secondstage loader"
+msgstr "check /dev/mtd1 = Secondstage Loader"
+
+msgid "check /dev/mtd/1 = secondstage loader"
+msgstr "check /dev/mtd/1 = Secondstage Loader"
+
+msgid "check /dev/mtd2 = boot"
+msgstr "check /dev/mtd2 = boot"
+
+msgid "check /dev/mtd/2 = boot"
+msgstr "check /dev/mtd/2 = boot"
+
+msgid "check /dev/mtd3 = root"
+msgstr "check /dev/mtd3 = root"
+
+msgid "check /dev/mtd/3 = root"
+msgstr "check /dev/mtd/3 = root"
+
+msgid "check /dev/mtd4 = home"
+msgstr "check /dev/mtd4 = home"
+
+msgid "check /dev/mtd/4 = home"
+msgstr "check /dev/mtd/4 = home"
+
+msgid "check /dev/mtd5 = unused"
+msgstr "check /dev/mtd5 = unbenutzt"
+
+msgid "check /dev/mtd/5 = unused"
+msgstr "check /dev/mtd/5 = unbenutzt"
+
+msgid "check /dev/mtd6 = unused"
+msgstr "check /dev/mtd6 = unbenutzt"
+
+msgid "check /dev/mtd/6 = unused"
+msgstr "check /dev/mtd/6 = unbenutzt"
+
+msgid "ubinfo"
+msgstr "ubinfo"
+
+msgid "checking %s - be patient (up to 1 min)"
+msgstr "Prüfe %s - bitte warten (bis zu 1 Min)"
+
+msgid ""
+"B Bad block\n"
+". Empty block\n"
+"- Partially filled block\n"
+"= Full block, no summary node\n"
+"S Full block, summary node\n"
+"Ignore B at the end of Flash"
+msgstr ""
+"B Bad Block\n"
+". Block leer\n"
+"- Teilweise gefüllter Block\n"
+"= Block voll, kein Summary Node\n"
+"S Block voll, Summary Node\n"
+"Ignoriere B am Ende des Flashspeichers"
+
+msgid "Flashtool"
+msgstr "Flashwerkzeug"
+
+msgid "Backuptool"
+msgstr "Sicherungswerkzeug"
+
+msgid "jffs2 boot compression"
+msgstr "jffs2 boot Kompression"
+
+msgid "jffs2 root compression"
+msgstr "jffs2 root Kompression"
+
+msgid "jffs2 erase block summary"
+msgstr "jffs2 erase block Zusammenfassung"
+
+msgid "ubifs root compression"
+msgstr "ubifs root Kompression"
+
+msgid "ubifs data backup"
+msgstr "ubifs data backup"
+
+msgid "ubifs data compression"
+msgstr "ubifs data Kompression"
+
+msgid "Root Volume Size [59-%iMB]"
+msgstr "Root Volume Größe [59-%iMB]"
+
+msgid "Root Volume Size [40-%iMB]"
+msgstr "Root Volume Größe [40-%iMB]"
+
+msgid "ubifs subpages [Flash="
+msgstr "ubifs subpages [Flash="
+
+msgid ", rambo="
+msgstr ", rambo="
+
+msgid "ubifs debug level"
+msgstr "ubifs Debug-Level"
+
+msgid "Console output"
+msgstr "Ausgabe auf Konsole"
+
+msgid "Fading"
+msgstr "Fading"
+
+msgid "Swapsize [MB]"
+msgstr "Swapsize [MB]"
+
+msgid "loop swap over network"
+msgstr "Swap Schleife über das Netzwerk"
+
+msgid "include /usr mount in backup"
+msgstr "/usr mount in die Sicherung einbeziehen"
+
+msgid "include squashfs directories in backup"
+msgstr "squashfs Ordner in die Sicherung einbeziehen"
+
+msgid "zip backups"
+msgstr "zip Sicherungen"
+
+msgid "show in Extensions Menu"
+msgstr "im Erweiterungsmenü anzeigen"
+
+msgid ""
+"Root Filesystem\n"
+"\n"
+"total: %s MB\n"
+"used:  %s MB\n"
+"free:  %s MB"
+msgstr ""
+"Root Filesystem\n"
+"\n"
+"gesamt: %s MB\n"
+"benutzt: %s MB\n"
+"frei: %s MB"
+
+msgid ""
+"Memory\n"
+"\n"
+"total: %i MB\n"
+"used: %i MB\n"
+"free: %i MB"
+msgstr ""
+"Hauptspeicher\n"
+"\n"
+"gesamt: %i MB\n"
+"benutzt: %i MB\n"
+"frei: %i MB"
+
+msgid "switch boxversion for backup"
+msgstr "tausche Boxversion beim Sichern"
+
